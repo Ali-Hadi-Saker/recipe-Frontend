@@ -2,17 +2,15 @@ import { useState, useEffect } from 'react';
 import './styles/index.css'
 import './styles/colors.css'
 import './styles/utilities.css'
-import Card from './components/card';
 
-import Navbar from './components/navbar';
+import LandingPage from './pages/landing-page';
 
 function App() {
 
 
   return (
     <div className="container">
-      {/* <Navbar/> */}
-      <Card/>
+      <LandingPage/>      
     </div>
 );
 }
