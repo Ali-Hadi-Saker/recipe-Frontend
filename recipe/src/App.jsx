@@ -4,13 +4,15 @@ import './styles/colors.css'
 import './styles/utilities.css'
 
 import LandingPage from './pages/landing-page';
+import Login from './pages/login';
 
 function App() {
 
 
   return (
     <div className="container">
-      <LandingPage/>      
+      {/* <LandingPage/>       */}
+      <Login/>
     </div>
 );
 }
