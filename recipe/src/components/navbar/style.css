@@ -1,0 +1,25 @@
+.right-side{
+    width: 30%;
+    padding: 20px;
+}
+h1{
+    padding: 20px;
+}
+.search-bar{
+    height: 30px;
+    gap:5px
+    
+}
+
+.btn{
+    padding: 10px 20px;
+    height: 30px;
+    border: none;
+}
+.border{
+    border-radius: 5px;
+}
+.input{
+    outline: none;
+    padding: 0 5px;
+}
