@@ -23,7 +23,11 @@ const Navbar = ()=>{
                 onChange={(e)=>setSearch(e.target.value)} />
                 <Button text="search" onclick={searchHandler}/>
             </div>
-            <Button text="Login"/>
+            <ul className="flex white-text option clickable">
+                <li>Favorite</li>
+                <li>Login</li>
+            </ul>
+                
             </div>
         </div>
     )

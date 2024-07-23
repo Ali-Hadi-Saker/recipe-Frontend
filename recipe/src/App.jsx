@@ -1,18 +1,19 @@
 import { useState, useEffect } from 'react';
+import React from "react";
 import './styles/index.css'
 import './styles/colors.css'
 import './styles/utilities.css'
 
-import LandingPage from './pages/landing-page';
-import Login from './pages/login';
 
+import LandingPage from './pages/landing-page'
 function App() {
 
 
   return (
     <div className="container">
-      {/* <LandingPage/>       */}
-      <Login/>
+      <LandingPage/>      
+      
+      
     </div>
 );
 }

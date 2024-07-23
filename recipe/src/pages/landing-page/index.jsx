@@ -14,6 +14,7 @@ const LandingPage = ()=>{
                 const data = await response.json()
                 setRecipe(data)
                 console.log('useEffect')
+                console.log(data)
 
             }catch (error){
                 console.error(error)
@@ -22,12 +23,15 @@ const LandingPage = ()=>{
         fetchData()
     },[])
     return(
-        <div>
+        <div className="page">
             <Navbar/>
-            <div className="flex">
+            <div className="flex ">
             {recipes.map((recipe)=>{
                 return (
-                    <Card name={recipe.name} description={recipe.desciption}/>
+                    
+                    <Card name={recipe.name} 
+                    description={recipe.description}
+                    id={recipe.id_recipe}/>
                 )
             })}
             </div>

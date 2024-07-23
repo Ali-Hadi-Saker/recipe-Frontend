@@ -1,5 +1,5 @@
 .right-side{
-    width: 30%;
+    width: 35%;
     padding: 20px;
 }
 h1{
@@ -22,4 +22,7 @@ h1{
 .input{
     outline: none;
     padding: 0 5px;
+}
+.option{    
+    gap:10px
 }
