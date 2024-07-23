@@ -29,7 +29,8 @@ const DisplayCard = ({apiURL})=>{
                     
                     <Card name={recipe.name} 
                     description={recipe.description}
-                    id={recipe.id_recipe}/>
+                    id={recipe.id_recipe}
+                    steps={recipe.steps}/>
                 )
             })}
             </div>

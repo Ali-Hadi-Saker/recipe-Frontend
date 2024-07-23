@@ -1,8 +1,10 @@
 import React from "react";
 import './style.css'
+import Button from "../../base/button";
+import { useNavigate } from "react-router-dom";
 
-const Card = ({onSave, name, description, id})=>{
-
+const Card = ({name, description, id, steps})=>{
+    const navigate = useNavigate()
     const handleSave = async ()=>{
         console.log(`${id}`)
         try {
@@ -20,7 +22,8 @@ const Card = ({onSave, name, description, id})=>{
                 <h2 class="recipe-name">{name}</h2>
                 <button className="save-icon flex clickable" onClick={handleSave}>★</button>
             </div>
-            <p class="recipe-description">{description}</p>            
+            <p class="recipe-description">{description}</p>
+            <Button text={'View recipe'} onclick={()=>navigate(`/recipe?${id}`)}/> 
         </div>
         )
 }

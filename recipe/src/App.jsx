@@ -7,6 +7,7 @@ import HomePage from './pages/home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./pages/signup";
 import FavoritePage from "./pages/favorite-page";
+import RecipePage from "./pages/recipe-page";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/favorite" element={<FavoritePage />} />
+          <Route path="/recipe" element={<RecipePage />} />
         </Routes>
       </BrowserRouter>
     </div>
