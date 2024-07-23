@@ -1,12 +1,16 @@
 import React from "react";
-import { useEffect } from "react";
 import './style.css'
+import Navbar from "../../components/navbar";
+import DisplayCard from "../../components/display-card";
 
-const FavotirePage = ()=>{
-    
+const FavoritePage = ()=>{
+
     return(
-        <div></div>
+        <div className="page">
+            <Navbar/>
+            <DisplayCard apiURL={'http://localhost/recipe-Backend/api/get-all-star-recipe.php'}/>
+        </div>
     )
 }
 
-export default FavotirePage;
+export default FavoritePage
