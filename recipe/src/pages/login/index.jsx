@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import Input from "../../base/Input";
 import Button from "../../base/button";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Login = () => {  
+    const navigate = useNavigate()
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
@@ -19,7 +21,9 @@ const Login = () => {
             })
         })
         const data = await response.json()
-        console.log(data)
+        if(data.success){
+            navigate("/home")
+        }
         
     }
   
