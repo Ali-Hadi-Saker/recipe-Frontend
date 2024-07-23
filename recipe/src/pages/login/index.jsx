@@ -4,8 +4,24 @@ import Input from "../../base/Input";
 import Button from "../../base/button";
 
 const Login = () => {  
-    const [email, setEmail] = useState("");
+    const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+
+    const loginHandler = async ()=>{
+        const response = await fetch('http://localhost/recipe-Backend/auth/signin.php',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username,
+                password,
+            })
+        })
+        const data = await response.json()
+        console.log(data)
+        
+    }
   
   return (
     <div className="flex column center page">
@@ -13,10 +29,10 @@ const Login = () => {
         <h3>Login</h3>
 
         <Input
-          label={"Email"}
-          placeholder={"john@example.io"}
+          label={"username"}
+          placeholder={"username"}
           onTextChange={(e) => {
-            setEmail(e.target.value);
+            setUsername(e.target.value);
           }}
         />
 
@@ -28,14 +44,12 @@ const Login = () => {
           }}
         />
 
-        <Button text="Login"  />
+        
         <Button
-          text="Sign up"
+          text="Signin"
           bgColor="white-bg"
           textColor="black-text"
-          onMouseClick={() => {
-            console.log("Sign up");
-          }}
+          onclick={loginHandler}
         />
       </div>
     </div>
