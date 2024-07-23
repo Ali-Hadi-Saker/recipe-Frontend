@@ -2,8 +2,10 @@ import React from "react";
 import './style.css';
 import Button from "../../base/button";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = ()=>{
+    const navigate = useNavigate()
     const [search, setSearch] = useState('');
 
     const searchHandler = async()=>{
@@ -24,8 +26,8 @@ const Navbar = ()=>{
                 <Button text="search" onclick={searchHandler}/>
             </div>
             <ul className="flex white-text option clickable">
-                <li>Favorite</li>
-                <li>Login</li>
+                <li onClick={()=>(navigate("/favorite"))}>Favorite</li>
+                <li onClick={()=>(navigate("/login"))}>Login</li>
             </ul>
                 
             </div>

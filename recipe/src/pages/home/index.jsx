@@ -3,7 +3,7 @@ import './style.css'
 import Navbar from "../../components/navbar";
 import DisplayCard from "../../components/display-card";
 
-const LandingPage = ()=>{
+const HomePage = ()=>{
 
     return(
         <div className="page">
@@ -13,4 +13,4 @@ const LandingPage = ()=>{
     )
 }
 
-export default LandingPage
+export default HomePage

@@ -1,0 +1,8 @@
+.auth-box {
+    max-width: 300px;
+    width: 40%;
+    padding: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.285);
+    gap: 20px;
+  }
+  
