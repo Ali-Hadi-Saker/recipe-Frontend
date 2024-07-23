@@ -3,7 +3,7 @@ import './style.css';
 
 const Button = ({text, onclick})=>{
     return(        
-        <button className="clickable center flex btn border"
+        <button className="clickable center flex btn border white-text "
         onClick={onclick}>{text}</button>            
     )
 }

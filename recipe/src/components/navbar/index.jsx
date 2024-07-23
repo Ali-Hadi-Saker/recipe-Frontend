@@ -25,7 +25,7 @@ const Navbar = ()=>{
                 onChange={(e)=>setSearch(e.target.value)} />
                 <Button text="search" onclick={searchHandler}/>
             </div>
-            <ul className="flex white-text option clickable">
+            <ul className="flex white-text option clickable padding">
                 <li onClick={()=>(navigate("/favorite"))}>Favorite</li>
                 <li onClick={()=>(navigate("/login"))}>Login</li>
             </ul>

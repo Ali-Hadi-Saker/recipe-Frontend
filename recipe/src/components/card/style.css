@@ -4,7 +4,9 @@
   margin: 10px;
   height: 200px;
   width: 150px;
-  gap:40px
+  gap:40px;
+  background-color: #f39c12;
+  
 }
 
 .card-header {
@@ -28,4 +30,8 @@
 
 .recipe-description {
   margin-top: 10px;
+}
+
+p{
+  font-weight: 700;
 }

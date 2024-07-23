@@ -19,10 +19,10 @@ const Card = ({name, description, id, steps})=>{
     return(        
         <div className="card primary-bg flex column border center shadow">            
             <div className="card-header flex">
-                <h2 class="recipe-name">{name}</h2>
+                <h2 class="recipe-name white-text">{name}</h2>
                 <button className="save-icon flex clickable" onClick={handleSave}>★</button>
             </div>
-            <p class="recipe-description">{description}</p>
+            <p class="recipe-description white-text">{description}</p>
             <Button text={'View recipe'} onclick={()=>navigate(`/recipe?${id}`)}/> 
         </div>
         )
